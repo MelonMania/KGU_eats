@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--BackdoorVC-->
         <scene sceneID="ul7-RJ-0Cf">
             <objects>
-                <viewController id="EQG-5u-xVc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BackdoorVC" title="BackdoorVC" id="EQG-5u-xVc" customClass="BackdoorVC" customModule="KGU_eats" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zjw-hI-dkT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ㅎㅜㅁㅜㄴ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-r7-I0c">
-                                <rect key="frame" x="159" y="55" width="96" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="후문" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-r7-I0c">
+                                <rect key="frame" x="184" y="20" width="47" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,16 +25,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bF6-cp-igS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="top" secondItem="bF6-cp-igS" secondAttribute="top" constant="33" id="5Wj-kH-2pf"/>
+                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="centerX" secondItem="zjw-hI-dkT" secondAttribute="centerX" id="BH6-5S-GrO"/>
+                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="leading" secondItem="bF6-cp-igS" secondAttribute="leading" constant="188" id="tcW-MN-R1E"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gI3-Qr-b7c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s1u-0G-7p7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1877" y="6"/>
+            <point key="canvasLocation" x="-723.1884057971015" y="-127.23214285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KGU_eats" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstVC" title="FirstVC" id="BYZ-38-t0r" customClass="FirstVC" customModule="KGU_eats" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,31 +70,49 @@
                                 <rect key="frame" x="33" y="221" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="E-SQUARE"/>
+                                <connections>
+                                    <action selector="goToEsquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkh-Wf-Fp4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-ZD-w94">
                                 <rect key="frame" x="179" y="221" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="감성 Core"/>
+                                <connections>
+                                    <action selector="goToGamsungCore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSY-xJ-TB6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-Na-iGi">
                                 <rect key="frame" x="33" y="340" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="교직원 식당"/>
+                                <connections>
+                                    <action selector="goToTeacher:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfn-RY-s40"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-dB-pww">
                                 <rect key="frame" x="179" y="340" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="기숙사 식당"/>
+                                <connections>
+                                    <action selector="goToDreamTower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9o-Fx-xhh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKD-Lw-Cch">
                                 <rect key="frame" x="33" y="573" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="후문"/>
+                                <connections>
+                                    <action selector="goToBackDoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eI6-v2-a3D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iy-nH-FOn">
                                 <rect key="frame" x="179" y="573" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="정문"/>
+                                <connections>
+                                    <action selector="goToFrontDoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN3-xo-gGX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-TC-lUW">
                                 <rect key="frame" x="353" y="55" width="30" height="30"/>
@@ -100,10 +123,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="EQG-5u-xVc" kind="presentation" identifier="Backdoor" id="R89-Eq-Rbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-648" y="411"/>
+            <point key="canvasLocation" x="441" y="205"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Vc-KP-G0d">
@@ -185,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFg-aa-NPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-547"/>
+            <point key="canvasLocation" x="1684.057971014493" y="-547.09821428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hda-JF-evO">
@@ -267,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zop-Iv-gGf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="84"/>
+            <point key="canvasLocation" x="1681.1594202898552" y="83.705357142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ikf-P7-E7o">
@@ -349,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XsF-Ke-pgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="727"/>
+            <point key="canvasLocation" x="1720" y="755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Atp-wl-P6m">
@@ -438,7 +464,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="166-MW-hUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="1381"/>
+            <point key="canvasLocation" x="1759" y="1405"/>
         </scene>
     </scenes>
     <resources>
