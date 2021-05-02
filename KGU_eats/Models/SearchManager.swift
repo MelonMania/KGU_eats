@@ -5,6 +5,10 @@
 //  Created by RooZin on 2021/04/30.
 //
 
+protocol SearchManagerProtocol {
+    
+}
+
 import UIKit
 
 struct SearchManager {
