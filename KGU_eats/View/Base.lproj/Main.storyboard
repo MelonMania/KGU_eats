@@ -74,14 +74,6 @@
                                     <action selector="goToEsquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkh-Wf-Fp4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-ZD-w94">
-                                <rect key="frame" x="179" y="221" width="105" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="감성 Core"/>
-                                <connections>
-                                    <action selector="goToGamsungCore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSY-xJ-TB6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-Na-iGi">
                                 <rect key="frame" x="33" y="340" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -118,6 +110,14 @@
                                 <rect key="frame" x="353" y="55" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="info"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-ZD-w94">
+                                <rect key="frame" x="179" y="221" width="105" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="감성 Core"/>
+                                <connections>
+                                    <action selector="goToGamsungCore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSY-xJ-TB6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
