@@ -5,8 +5,9 @@
 //  Created by RooZin on 2021/04/30.
 //
 
-protocol SearchManagerProtocol {
-    
+protocol SearchManagerDelegate {
+    func didUpdateMarketList(_ data : [SearchModel])
+    func didFailWithError(_ error : Error)
 }
 
 import UIKit
@@ -36,12 +37,12 @@ struct SearchManager {
         let session = URLSession(configuration: .default)
         let task = session.dataTask(with: request) { (data, response, error) in
             if error != nil {
-                delegate?.printLoadError(error!)
+                delegate?.didFailWithError(error!)
             }
             if let safeData = data {
                 DispatchQueue.main.async {
                     if let searchData = self.parseJSON(data: safeData) {
-                        delegate?.loadCelebPicture(searchData)
+                        delegate?.didUpdateMarketList(searchData)
                     }
                 }
             }
@@ -67,7 +68,7 @@ struct SearchManager {
             return dataList
         }
         catch{
-            delegate?.printLoadError(error)
+            delegate?.didFailWithError(error)
             return nil
         }
     }

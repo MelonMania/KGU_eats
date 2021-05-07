@@ -16,20 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="후문" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbe-r7-I0c">
-                                <rect key="frame" x="184" y="20" width="47" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="후문" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyd-kL-ZTu">
+                                <rect key="frame" x="158" y="20" width="98" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bF6-cp-igS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="top" secondItem="bF6-cp-igS" secondAttribute="top" constant="33" id="5Wj-kH-2pf"/>
-                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="centerX" secondItem="zjw-hI-dkT" secondAttribute="centerX" id="BH6-5S-GrO"/>
-                            <constraint firstItem="Pbe-r7-I0c" firstAttribute="leading" secondItem="bF6-cp-igS" secondAttribute="leading" constant="188" id="tcW-MN-R1E"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gI3-Qr-b7c"/>
                 </viewController>
