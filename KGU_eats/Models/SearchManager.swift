@@ -19,7 +19,7 @@ struct SearchManager {
     
     func fetchURL(_ place : String) {
         
-        let url = "\(baseURL)?query=\(place)"
+        let url = "\(baseURL)?query=\(place)&display=5"
         let encodedURL = url.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
         
         requestGet(encodedURL)
