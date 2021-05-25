@@ -16,31 +16,32 @@ class FrontdoorVC: UIViewController {
         searchManager.delegate = self
     }
     
-    @IBAction func KoreanFood(_ sender: UIButton) {
+    @IBAction func koreanFood(_ sender: UIButton) {
         searchManager.fetchURL("연무동한식")
     }
     
-    @IBAction func WesternFood(_ sender: Any) {
+    @IBAction func westernFood(_ sender: Any) {
         searchManager.fetchURL("연무동양식")
     }
     
-    @IBAction func ChineseFood(_ sender: Any) {
+    @IBAction func chineseFood(_ sender: Any) {
         searchManager.fetchURL("연무동중식")
     }
     
 
-    @IBAction func SchoolFood(_ sender: Any) {
+    @IBAction func schoolFood(_ sender: Any) {
         searchManager.fetchURL("연무동분식")
     }
     
-    @IBAction func NightFood(_ sender: Any) {
+    @IBAction func nightFood(_ sender: Any) {
         searchManager.fetchURL("연무동야식")
     }
     
-    @IBAction func LunchBox(_ sender: Any) {
+    @IBAction func lunchBox(_ sender: Any) {
         searchManager.fetchURL("연무동도시락")
     }
 }
+//MARK: - SearchManagerDelegate
 
 extension FrontdoorVC : SearchManagerDelegate {
     func didUpdateMarketList(_ data: [SearchModel]) {
