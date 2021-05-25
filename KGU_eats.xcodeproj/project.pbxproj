@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1708A0DC26395A0F00E15B30 /* BackdoorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1708A0DB26395A0F00E15B30 /* BackdoorVC.swift */; };
+		17731498265C90F300A411A0 /* FrontdoorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17731497265C90F300A411A0 /* FrontdoorVC.swift */; };
 		17BF48A9263BD97900FEA9D2 /* SearchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF48A8263BD97900FEA9D2 /* SearchData.swift */; };
 		17BF48AB263BD9FD00FEA9D2 /* SearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF48AA263BD9FD00FEA9D2 /* SearchManager.swift */; };
 		17BF48AD263BDA1100FEA9D2 /* SearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF48AC263BDA1100FEA9D2 /* SearchModel.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		1708A0DB26395A0F00E15B30 /* BackdoorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackdoorVC.swift; sourceTree = "<group>"; };
+		17731497265C90F300A411A0 /* FrontdoorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontdoorVC.swift; sourceTree = "<group>"; };
 		17BF48A8263BD97900FEA9D2 /* SearchData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchData.swift; sourceTree = "<group>"; };
 		17BF48AA263BD9FD00FEA9D2 /* SearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchManager.swift; sourceTree = "<group>"; };
 		17BF48AC263BDA1100FEA9D2 /* SearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModel.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				17CBD67A260DAB9200BC8EB1 /* FirstVC.swift */,
 				1708A0DB26395A0F00E15B30 /* BackdoorVC.swift */,
+				17731497265C90F300A411A0 /* FrontdoorVC.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				17CBD67B260DAB9200BC8EB1 /* FirstVC.swift in Sources */,
 				17BF48A9263BD97900FEA9D2 /* SearchData.swift in Sources */,
 				1708A0DC26395A0F00E15B30 /* BackdoorVC.swift in Sources */,
+				17731498265C90F300A411A0 /* FrontdoorVC.swift in Sources */,
 				17BF48AB263BD9FD00FEA9D2 /* SearchManager.swift in Sources */,
 				17BF48AD263BDA1100FEA9D2 /* SearchModel.swift in Sources */,
 				17CBD677260DAB9200BC8EB1 /* AppDelegate.swift in Sources */,
