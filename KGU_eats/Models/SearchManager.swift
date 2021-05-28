@@ -59,12 +59,18 @@ struct SearchManager {
             
             let total = decodedData.total
             
-            for i in 0...total-1 {
-                let parsingData = SearchModel(marketName: decodedData.items[i].title, marketCategory: decodedData.items[i].category, marketAddress: decodedData.items[i].roadAddress)
-                
-                dataList.append(parsingData)
+            if total != 0 {
+                for i in 0...total-1 {
+                    let parsingData = SearchModel(marketName: decodedData.items[i].title, marketCategory: decodedData.items[i].category, marketAddress: decodedData.items[i].roadAddress)
+                    
+                    dataList.append(parsingData)
+                }
             }
-            
+            else {
+                let emptyData = SearchModel(marketName : "검색결과가 없습니다", marketCategory: "검색결과가 없습니다", marketAddress: "검색결과가 없습니다" )
+                dataList.append(emptyData)
+            }
+                       
             return dataList
         }
         catch{
