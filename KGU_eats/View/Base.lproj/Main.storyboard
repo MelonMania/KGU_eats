@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="cll-1m-kEZ">
-                                <rect key="frame" x="57" y="20" width="300" height="438"/>
+                                <rect key="frame" x="57" y="20" width="300" height="325.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebt-Rs-qMt">
                                         <rect key="frame" x="135.5" y="0.0" width="29.5" height="20"/>
@@ -52,59 +52,82 @@
                                             <constraint firstAttribute="height" constant="40" id="kzb-em-xDq"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="172" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-MZ-SlR">
-                                        <rect key="frame" x="39" y="166" width="222" height="272"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRQ-MZ-SlR">
+                                        <rect key="frame" x="39" y="166" width="222" height="159.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="omE-fD-jrq">
                                                 <rect key="frame" x="0.0" y="0.0" width="222" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58a-aR-Had">
-                                                        <rect key="frame" x="0.0" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="한식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58a-aR-Had">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" image="icons8-kawaii-rice-90"/>
                                                         <connections>
                                                             <action selector="koreanFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="w6F-9X-eoR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-53-7cS">
-                                                        <rect key="frame" x="86" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="양식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUC-53-7cS">
+                                                        <rect key="frame" x="86" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" image="icons8-spaghetti-256"/>
                                                         <connections>
                                                             <action selector="westernFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="mgb-EJ-PmM"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-e5-PUi">
-                                                        <rect key="frame" x="172" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="중식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-e5-PUi">
+                                                        <rect key="frame" x="172" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" image="icons8-dim-sum-150"/>
                                                         <connections>
                                                             <action selector="chineseFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="qlF-Mu-pS8"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="632-19-1Uy">
-                                                <rect key="frame" x="0.0" y="222" width="222" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="b2H-qI-Fn2">
+                                                <rect key="frame" x="0.0" y="49" width="222" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-dH-6bA">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ng8-w1-O6n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="47.5" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="양식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-vR-10O">
+                                                        <rect key="frame" x="87.5" y="0.0" width="47" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="중식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPt-8I-kbf">
+                                                        <rect key="frame" x="174.5" y="0.0" width="47.5" height="50"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="632-19-1Uy">
+                                                <rect key="frame" x="0.0" y="109.5" width="222" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su6-dH-6bA">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="Ew7-Qq-Ryg"/>
                                                             <constraint firstAttribute="height" constant="50" id="yfv-Y6-pKN"/>
                                                         </constraints>
-                                                        <state key="normal" title="분식"/>
+                                                        <state key="normal" image="icons8-hot-dog-64"/>
                                                         <connections>
                                                             <action selector="schoolFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="bVV-Bs-vjX"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-9o-VXo">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Eb-9o-VXo">
                                                         <rect key="frame" x="86" y="0.0" width="50" height="50"/>
-                                                        <state key="normal" title="야식"/>
+                                                        <state key="normal" image="icons8-salmon-sushi-50"/>
                                                         <connections>
                                                             <action selector="nightFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="njs-qG-V6n"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko9-yp-bhF">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko9-yp-bhF">
                                                         <rect key="frame" x="172" y="0.0" width="50" height="50"/>
-                                                        <state key="normal" title="도시락"/>
+                                                        <state key="normal" image="icons8-bento-100"/>
                                                         <connections>
                                                             <action selector="lunchBox:" destination="EQG-5u-xVc" eventType="touchUpInside" id="ZhN-E4-vfn"/>
                                                         </connections>
@@ -113,6 +136,29 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillProportionally" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="6iF-J1-xeX">
+                                <rect key="frame" x="104" y="353" width="209.5" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="분식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDu-P7-UNZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="29.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일식" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwf-ph-yH2">
+                                        <rect key="frame" x="82.5" y="0.0" width="29.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="도시락" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swt-ii-kds">
+                                        <rect key="frame" x="165" y="0.0" width="44.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -142,7 +188,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-gk-HF4">
-                                <rect key="frame" x="57" y="20" width="300" height="438"/>
+                                <rect key="frame" x="57" y="20" width="300" height="366"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIa-Ul-mE8">
                                         <rect key="frame" x="135.5" y="0.0" width="29.5" height="20"/>
@@ -167,6 +213,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxT-Wh-vSg">
                                                 <rect key="frame" x="280" y="0.0" width="20" height="40"/>
                                                 <state key="normal" image="magnifyingglass.circle" catalog="system"/>
+                                                <connections>
+                                                    <action selector="pressSearch:" destination="rfB-g5-m7L" eventType="touchUpInside" id="DfN-zh-eiJ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -174,29 +223,29 @@
                                             <constraint firstAttribute="width" constant="300" id="j3p-8p-qGw"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="172" translatesAutoresizingMaskIntoConstraints="NO" id="Noq-zW-jNp">
-                                        <rect key="frame" x="39" y="166" width="222" height="272"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Noq-zW-jNp">
+                                        <rect key="frame" x="39" y="166" width="222" height="200"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="afV-k3-uQF">
                                                 <rect key="frame" x="0.0" y="0.0" width="222" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0T-Tt-NrR">
-                                                        <rect key="frame" x="0.0" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="한식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0T-Tt-NrR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" image="icons8-kawaii-rice-90"/>
                                                         <connections>
                                                             <action selector="koreanFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="DRZ-yK-gkp"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR8-6D-BdL">
-                                                        <rect key="frame" x="86" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="양식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MR8-6D-BdL">
+                                                        <rect key="frame" x="86" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" title="양식" image="icons8-spaghetti-256"/>
                                                         <connections>
                                                             <action selector="westernFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="TJO-hu-jNd"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAG-5K-sQN">
-                                                        <rect key="frame" x="172" y="10" width="50" height="30"/>
-                                                        <state key="normal" title="중식"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAG-5K-sQN">
+                                                        <rect key="frame" x="172" y="0.0" width="50" height="50"/>
+                                                        <state key="normal" image="icons8-dim-sum-150"/>
                                                         <connections>
                                                             <action selector="chineseFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="Bpf-wO-FCe"/>
                                                         </connections>
@@ -204,29 +253,29 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="ZPV-r3-7fU">
-                                                <rect key="frame" x="0.0" y="222" width="222" height="50"/>
+                                                <rect key="frame" x="0.0" y="150" width="222" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-eN-b9a">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2e-eN-b9a">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="cZe-Ax-hn0"/>
                                                             <constraint firstAttribute="height" constant="50" id="tMd-iJ-zky"/>
                                                         </constraints>
-                                                        <state key="normal" title="분식"/>
+                                                        <state key="normal" image="icons8-hot-dog-64"/>
                                                         <connections>
                                                             <action selector="schoolFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="jdE-ZN-UR4"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-5X-4JN">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oix-5X-4JN">
                                                         <rect key="frame" x="86" y="0.0" width="50" height="50"/>
-                                                        <state key="normal" title="야식"/>
+                                                        <state key="normal" image="icons8-salmon-sushi-50"/>
                                                         <connections>
                                                             <action selector="nightFood:" destination="EQG-5u-xVc" eventType="touchUpInside" id="cxG-Iu-0Nd"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYu-f9-5SB">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYu-f9-5SB">
                                                         <rect key="frame" x="172" y="0.0" width="50" height="50"/>
-                                                        <state key="normal" title="도시락"/>
+                                                        <state key="normal" image="icons8-bento-100"/>
                                                         <connections>
                                                             <action selector="lunchBox:" destination="EQG-5u-xVc" eventType="touchUpInside" id="ai2-nE-5Nb"/>
                                                         </connections>
@@ -246,6 +295,9 @@
                             <constraint firstItem="iIT-XW-zqC" firstAttribute="trailing" secondItem="AtO-gk-HF4" secondAttribute="trailing" constant="57" id="v7O-dr-kFr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchField" destination="nsy-hF-fgP" id="O1D-Ts-jHz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSA-oW-D3r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,26 +332,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEN-mN-rdE">
-                                <rect key="frame" x="33" y="221" width="105" height="111"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEN-mN-rdE">
+                                <rect key="frame" x="36" y="227" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="E-SQUARE"/>
+                                <state key="normal" image="market5"/>
                                 <connections>
                                     <action selector="goToEsquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkh-Wf-Fp4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-Na-iGi">
-                                <rect key="frame" x="33" y="340" width="105" height="111"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQX-Na-iGi">
+                                <rect key="frame" x="61" y="371" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="교직원 식당"/>
+                                <state key="normal" image="market1"/>
                                 <connections>
                                     <action selector="goToTeacher:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfn-RY-s40"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-dB-pww">
-                                <rect key="frame" x="179" y="340" width="105" height="111"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TT9-dB-pww">
+                                <rect key="frame" x="207" y="371" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="기숙사 식당"/>
+                                <state key="normal" image="market2"/>
                                 <connections>
                                     <action selector="goToDreamTower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9o-Fx-xhh"/>
                                 </connections>
@@ -307,7 +359,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKD-Lw-Cch">
                                 <rect key="frame" x="33" y="573" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="후문"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="뒤" backgroundImage="BackDoor">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" systemColor="systemGroupedBackgroundColor"/>
+                                </state>
                                 <connections>
                                     <action selector="goToBackDoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eI6-v2-a3D"/>
                                 </connections>
@@ -315,23 +371,54 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Iy-nH-FOn">
                                 <rect key="frame" x="179" y="573" width="105" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="정문"/>
+                                <state key="normal" title="앞" backgroundImage="FrontDoor">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="goToFrontDoor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN3-xo-gGX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-TC-lUW">
-                                <rect key="frame" x="353" y="55" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-ZD-w94">
+                                <rect key="frame" x="182" y="227" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="info"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGl-ZD-w94">
-                                <rect key="frame" x="179" y="221" width="105" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="감성 Core"/>
+                                <state key="normal" image="market4"/>
                                 <connections>
                                     <action selector="goToGamsungCore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lSY-xJ-TB6"/>
                                 </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="E-SQUARE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBk-9k-1vx">
+                                <rect key="frame" x="44" y="321" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="감성CORE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yua-Ji-eAF">
+                                <rect key="frame" x="195" y="321" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="교직원식당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqR-C1-b45">
+                                <rect key="frame" x="48" y="429" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기숙사식당" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOl-t4-Lx7">
+                                <rect key="frame" x="194" y="429" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6P-TC-lUW">
+                                <rect key="frame" x="359" y="58" width="20" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" image="info.circle" catalog="system"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -683,9 +770,25 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BackDoor" width="64" height="64"/>
+        <image name="FrontDoor" width="64" height="64"/>
+        <image name="icons8-bento-100" width="100" height="100"/>
+        <image name="icons8-dim-sum-150" width="150" height="150"/>
+        <image name="icons8-hot-dog-64" width="64" height="64"/>
+        <image name="icons8-kawaii-rice-90" width="90" height="90"/>
+        <image name="icons8-salmon-sushi-50" width="50" height="50"/>
+        <image name="icons8-spaghetti-256" width="256" height="256"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
+        <image name="market1" width="50" height="50"/>
+        <image name="market2" width="50" height="50"/>
+        <image name="market4" width="100" height="100"/>
+        <image name="market5" width="100" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
