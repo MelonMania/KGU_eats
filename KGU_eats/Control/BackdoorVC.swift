@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BackdoorVC: UIViewController {
+class BackdoorVC: UIViewController, UITextFieldDelegate {
     
     var searchManager = SearchManager()
     
@@ -15,7 +15,8 @@ class BackdoorVC: UIViewController {
     let cellIdentifier : String = "cell"
     var category : String = ""
     
-    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchField: UITextField! { didSet { searchField.delegate = self }}
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,6 +24,15 @@ class BackdoorVC: UIViewController {
         searchManager.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func koreanFood(_ sender: UIButton) {
@@ -108,7 +118,6 @@ extension BackdoorVC : UITableViewDataSource, UITableViewDelegate {
     }
 
 }
-
 
 
 
