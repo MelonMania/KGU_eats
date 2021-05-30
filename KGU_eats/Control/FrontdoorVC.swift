@@ -15,11 +15,13 @@ class FrontdoorVC: UIViewController {
     let cellIdentifier : String = "cell"
     var category : String = ""
     
-    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchField: UITextField! { didSet { searchField.delegate = self }}
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchField.delegate = self
         searchManager.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -61,6 +63,7 @@ class FrontdoorVC: UIViewController {
             searchManager.fetchURL("연무동"+"\(safeData)")
             category = safeData
         }
+        self.view.endEditing(true)
     }
     
 }
@@ -75,6 +78,20 @@ extension FrontdoorVC : SearchManagerDelegate {
     
     func didFailWithError(_ error: Error) {
         print("error")
+    }
+}
+
+//MARK: - UITextFieldDelegate
+
+extension FrontdoorVC : UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        pressSearch(searchButton)
+        return true
     }
 }
 

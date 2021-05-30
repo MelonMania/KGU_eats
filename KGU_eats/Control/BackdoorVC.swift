@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BackdoorVC: UIViewController, UITextFieldDelegate {
+class BackdoorVC: UIViewController {
     
     var searchManager = SearchManager()
     
@@ -16,23 +16,16 @@ class BackdoorVC: UIViewController, UITextFieldDelegate {
     var category : String = ""
     
     @IBOutlet weak var searchField: UITextField! { didSet { searchField.delegate = self }}
-
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchButton: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchManager.delegate = self
+        searchField.delegate = self
         self.tableView.dataSource = self
         self.tableView.delegate = self
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
     @IBAction func koreanFood(_ sender: UIButton) {
@@ -70,8 +63,8 @@ class BackdoorVC: UIViewController, UITextFieldDelegate {
             searchManager.fetchURL("수원경기대후문"+"\(safeData)")
             category = safeData
         }
+        self.view.endEditing(true)
     }
-    
 }
 
 //MARK: - SearchManagerDelegate
@@ -84,6 +77,20 @@ extension BackdoorVC : SearchManagerDelegate {
     
     func didFailWithError(_ error: Error) {
         print("error")
+    }
+}
+
+//MARK: - UITextFieldDelegate
+
+extension BackdoorVC : UITextFieldDelegate {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        pressSearch(searchButton)
+        return true
     }
 }
 
