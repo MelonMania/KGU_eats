@@ -191,6 +191,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gI3-Qr-b7c"/>
                     <connections>
+                        <outlet property="searchButton" destination="r2M-fU-aYg" id="Djg-gF-W0U"/>
                         <outlet property="searchField" destination="6j9-4v-xmr" id="hup-q1-bW6"/>
                         <outlet property="tableView" destination="LOp-LV-zZt" id="35j-JY-NqR"/>
                     </connections>
@@ -390,6 +391,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchButton" destination="lxT-Wh-vSg" id="QOt-QB-B5j"/>
                         <outlet property="searchField" destination="nsy-hF-fgP" id="O1D-Ts-jHz"/>
                         <outlet property="tableView" destination="NHO-GK-sEL" id="Mqu-gY-8kR"/>
                     </connections>
