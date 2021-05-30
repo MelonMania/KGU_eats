@@ -67,7 +67,7 @@ struct SearchManager {
                 }
             }
             else {
-                let emptyData = SearchModel(marketName : "검색결과가 없습니다", marketCategory: "검색결과가 없습니다", marketAddress: "검색결과가 없습니다" )
+                let emptyData = SearchModel(marketName : "검색결과가 없습니다", marketCategory: "", marketAddress: "" )
                 dataList.append(emptyData)
             }
                        
