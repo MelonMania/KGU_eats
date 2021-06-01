@@ -9,12 +9,10 @@ import UIKit
 
 class FirstVC: UIViewController {
 
-    
     @IBOutlet weak var eSquare: UIButton!
     @IBOutlet weak var gamsungCore: UIButton!
     @IBOutlet weak var teacher: UIButton!
     @IBOutlet weak var dreamTower: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,20 +31,23 @@ class FirstVC: UIViewController {
     }
     
     @IBAction func goToEsquare(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "eSquare", sender: self)
     }
     
     @IBAction func goToGamsungCore(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "gamsungCore", sender: self)
     }
     
     @IBAction func goToTeacher(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "teacher", sender: self)
     }
     
     @IBAction func goToDreamTower(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "dreamTower", sender: self)
     }
     
     @IBAction func goToBackDoor(_ sender: UIButton) {
         self.performSegue(withIdentifier: "Backdoor", sender: self)
-        
     }
     
     @IBAction func goToFrontDoor(_ sender: UIButton) {
